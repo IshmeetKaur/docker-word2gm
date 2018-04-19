@@ -1,4 +1,4 @@
-FROM continuumio/anaconda3
+FROM continuumio/anaconda
 
 USER root
 
