@@ -1,4 +1,4 @@
-FROM continuumio/anaconda
+FROM tensorflow/tensorflow
 
 USER root
 
@@ -13,10 +13,10 @@ RUN \
   apt-get clean all
 
 RUN pip install -U  \
-	ggplot \
-    tensorflow==1.6
+	ggplot
 
-RUN git clone https://github.com/IshmeetKaur/word2gm.git
+RUN cd / && \
+ git clone https://github.com/IshmeetKaur/word2gm.git
 
 WORKDIR /word2gm
 
